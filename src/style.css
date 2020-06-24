@@ -13,7 +13,7 @@ html, body {
 }
 
 #logo {
-	margin-top: 10px;
+	margin-top: 30px;
 }
 
 #logo h1 {
@@ -39,6 +39,7 @@ html, body {
 }
 
 .quote-item {
+	position: relative;
 	margin-top: 50px;
 	width: 300px;
 	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
@@ -57,6 +58,10 @@ html, body {
 	line-height: 26px;
 }
 
+.quote-item:hover > .quote-background {
+	opacity: 1;
+}
+
 .author {
 	margin-top: 12px;
 	font-style: 14px;
@@ -73,6 +78,45 @@ html, body {
 	text-align: center;
 	margin-top: 50px;
 	margin-bottom: -20px;
+}
+
+.quote-background {
+	width: 350px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	border-radius: 5px;
+	background-color: rgba(255, 255, 255, 0.9);
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	transition: .2s;
+	opacity: 0;
+	display: flex;
+}
+
+.icons-container a {
+	color: #333;
+}
+
+.icons-container a:hover > .icon {
+	color: #3426E3;
+}
+
+.quote-background p {
+	margin-top: 0;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.icon {
+	font-size: 25px;
+	transition: .2s;
+}
+
+.icons-container a + a {
+	margin-left: 40px;
 }
 
 footer {

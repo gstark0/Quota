@@ -5,7 +5,7 @@ import quotesData from './quotes';
 class App extends React.Component {
 	render() {
 		const shuffledQuotes = quotesData.sort(() => 0.5 - Math.random());
-		const randomQuotes = shuffledQuotes.slice(0, 10).map(item => <Quote quote={item.text} author={item.author}/>);
+		const randomQuotes = shuffledQuotes.slice(0, 12).map(item => <Quote quote={item.text} author={item.author}/>);
 
 		return(
 			<div className='wrapper'>
