@@ -1,0 +1,84 @@
+* {
+	font-family: 'Roboto', sans-serif;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper {
+	max-width: 1200px;
+	margin: auto;
+}
+
+#logo {
+	margin-top: 10px;
+}
+
+#logo h1 {
+	font-size: 32px;
+	margin: 0 0 10px 0;
+}
+
+#logo h3 {
+	font-size: 20px;
+	margin: 0;
+}
+
+.colored {
+	color: #3426E3;
+}
+
+#quotes-container {
+	width: 100%;
+	display: flex;
+	color: #333;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.quote-item {
+	margin-top: 50px;
+	width: 300px;
+	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	padding: 25px;
+	justify-content: center;
+}
+
+.quote {
+	font-size: 18px;
+	font-style: italic;
+	letter-spacing: 1px;
+	text-align: center;
+	line-height: 26px;
+}
+
+.author {
+	margin-top: 12px;
+	font-style: 14px;
+	font-weight: bold;
+	text-align: right;
+}
+
+.quora-author {
+	font-size: 18px;
+}
+
+.quora-author-quote {
+	color: #333;
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: -20px;
+}
+
+footer {
+	margin-top: 80px;
+	margin-bottom: 20px;
+	color: #8B8B8B;
+	font-size: 14px;
+	text-align: center;
+}
