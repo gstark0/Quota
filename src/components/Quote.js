@@ -7,7 +7,7 @@ class Quote extends React.Component {
 	render() {
 		const websiteUrl = 'https://gstark.me';
 		return(
-			<div className='quote-item'>
+			<div>
 				<div className='quote-background'>
 					<p>Share</p>
 					<div className='icons-container'>

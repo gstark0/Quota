@@ -51,7 +51,7 @@ nav {
 	margin-right: 10px;
 }
 
-#quotes-container {
+.quotes-container {
 	width: 100%;
 	display: flex;
 	color: #333;
@@ -79,7 +79,7 @@ nav {
 	line-height: 150%;
 }
 
-.quote-item:hover > .quote-background {
+.quote-item > div:hover > .quote-background {
 	opacity: 1;
 }
 
@@ -171,7 +171,7 @@ footer {
 		max-width: 90%;
 	}
 
-	#quotes-container {
+	.quotes-container {
 		justify-content: space-evenly;
 	}
 }

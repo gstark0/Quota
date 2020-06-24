@@ -3,6 +3,7 @@ import Quote from './components/Quote';
 import quotesData from './quotes';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faRedo } from '@fortawesome/free-solid-svg-icons'
+import FadeIn from 'react-fade-in';
 
 class App extends React.Component {
 	render() {
@@ -28,9 +29,9 @@ class App extends React.Component {
 					<span className='quora-author'> ~ Gregory Stark, Creator of Quota</span>
 				</div>
 
-				<div id='quotes-container'>
+				<FadeIn className='quotes-container' childClassName='quote-item'>
 					{randomQuotes}
-				</div>
+				</FadeIn>
 
 				<footer>&copy; 2020 Gregory Stark, All Rights Reserved</footer>
 			</div>
