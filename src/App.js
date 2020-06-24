@@ -1,6 +1,8 @@
 import React from 'react';
 import Quote from './components/Quote';
 import quotesData from './quotes';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faRedo } from '@fortawesome/free-solid-svg-icons'
 
 class App extends React.Component {
 	render() {
@@ -9,10 +11,17 @@ class App extends React.Component {
 
 		return(
 			<div className='wrapper'>
-				<div id='logo'>
-					<h1>Quota<span className='colored'>.</span></h1>
-					<h3>Random <span className='colored'>motivational</span> quotes.</h3>
-				</div>
+				<nav>
+					<div id='logo'>
+						<h1>Quota<span className='colored'>.</span></h1>
+						<h3>Random <span className='colored'>motivational</span> quotes.</h3>
+					</div>
+
+					<a id='refresh-btn' href='javascript:window.location.reload();'>
+						<FontAwesomeIcon icon={faRedo}/>
+						Refresh
+					</a>
+				</nav>
 
 				<div className='quora-author-quote'>
 					<span className='quote'>“This is your daily dose of motivation”</span>

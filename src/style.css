@@ -12,6 +12,12 @@ html, body {
 	margin: auto;
 }
 
+nav {
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
+
 #logo {
 	margin-top: 30px;
 }
@@ -28,6 +34,21 @@ html, body {
 
 .colored {
 	color: #3426E3;
+}
+
+#refresh-btn {
+	font-size: 18px;
+	color: black;
+	margin-left: auto;
+	transition: .2s;
+}
+
+#refresh-btn:hover {
+	color: #3426E3;
+}
+
+#refresh-btn svg {
+	margin-right: 10px;
 }
 
 #quotes-container {
