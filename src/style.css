@@ -147,3 +147,31 @@ footer {
 	font-size: 14px;
 	text-align: center;
 }
+
+@media only screen and (max-width: 780px) {
+	.wrapper {
+		max-width: 90%;
+	}
+
+	#refresh-btn {
+		display: none;
+	}
+
+	.quote-item {
+		width: calc(100% - 50px);
+	}
+
+	.quote-background {
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 1300px) {
+	.wrapper {
+		max-width: 90%;
+	}
+
+	#quotes-container {
+		justify-content: space-evenly;
+	}
+}
