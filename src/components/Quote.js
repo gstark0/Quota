@@ -13,7 +13,10 @@ class Quote extends React.Component {
 					<div className='icons-container'>
 						<a target='_blank' href={'https://www.facebook.com/sharer.php?u=' + websiteUrl + '&quote=%22' + this.props.quote + '%22 ~ ' + this.props.author}><FontAwesomeIcon className='icon' icon={faFacebookF}/></a>
 						<a target='_blank' href={'https://twitter.com/intent/tweet?text=%22' + this.props.quote + '%22 ~ ' + this.props.author + '%0D%0A%0D%0A ' + websiteUrl}><FontAwesomeIcon className='icon' icon={faTwitter}/></a>
-						<a href='#'><FontAwesomeIcon className='icon' icon={faCopy}/></a>
+						<a href='#' onClick={() => {
+							navigator.clipboard.writeText(this.props.quote + ' ~ ' + this.props.author + '\n\n' + websiteUrl);
+							alert('Copied!');
+						}}><FontAwesomeIcon className='icon' icon={faCopy}/></a>
 					</div>
 				</div>
 				<div className='quote'>“{this.props.quote}”</div>
