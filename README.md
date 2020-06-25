@@ -1,4 +1,3 @@
-# Quota
 <h1 align='center'> Quota - Your daily dose of motivation!</h1>
 <p align='center'>
 	<img align='center' 	src='https://raw.githubusercontent.com/gstark0/Quota/master/pic.png' 	width='85%' />
