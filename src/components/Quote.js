@@ -5,7 +5,7 @@ import { faFacebookF, faTwitter } from '@fortawesome/free-brands-svg-icons'
 
 class Quote extends React.Component {
 	render() {
-		const websiteUrl = 'https://gstark.me';
+		const websiteUrl = 'https://quota.gstark.me';
 		return(
 			<div>
 				<div className='quote-background'>
